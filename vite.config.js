@@ -23,7 +23,7 @@ export default defineConfig({
       ],
     }),
   ],
-  base:'/garments2look',
+  base:'/garments2look-website',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
