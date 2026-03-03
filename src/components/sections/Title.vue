@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 
 import { ElIcon } from 'element-plus'
-import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
+import { FolderOpened, Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
 const logo = ''
@@ -59,9 +59,9 @@ const addresses = [
   },
   {
     address_flag: "2",
-    name: "Wyze Labs, Inc.",
+    name: "Huhu AI Inc.",
     icon: "",
-    homepage: "https://www.wyze.com/"
+    homepage: "https://huhu.ai/"
   },
 ]
 
@@ -76,36 +76,43 @@ const emphases = [
 
 // 提供引导资料链接
 const buttons = [
-  // {
-  //   disabled: true,
-  //   name: "Paper",
-  //   component: Document,
-  // },
+  {
+    disabled: true,
+    name: "Paper",
+    component: Document,
+  },
   // {
   //   disabled: true,
   //   name: "中译版",
   //   component: Document,
   // },
-  // {
-  //   disabled: true,
-  //   name: "Dataset",
-  //   component: Files,
-  // },
-  // {
-  //   disabled: true,
-  //   name: "Poster",
-  //   component: Picture,
-  // },
-  // {
-  //   disabled: true,
-  //   name: "Slide",
-  //   component: DataAnalysis,
-  // },
-  // {
-  //   disabled: true,
-  //   name: "Video",
-  //   component: Film,
-  // },
+  {
+    disabled: false,
+    name: "Code",
+    link: "https://github.com/ArtmeScienceLab/Garments2Look",
+    component: FolderOpened,
+  },
+  {
+    disabled: false,
+    name: "Dataset",
+    link: "https://huggingface.co/datasets/ArtmeScienceLab/Garments2Look",
+    component: Files,
+  },
+  {
+    disabled: true,
+    name: "Poster",
+    component: Picture,
+  },
+  {
+    disabled: true,
+    name: "Slide",
+    component: DataAnalysis,
+  },
+  {
+    disabled: true,
+    name: "Video",
+    component: Film,
+  },
 ]
 
 </script>
@@ -194,8 +201,8 @@ const buttons = [
 .paper-title {
   font-family: "MyFont", Verdana, sans-serif;
   letter-spacing: 2px;
-  font-size: 42px;
-  margin: 32px;
+  font-size: 30px;
+  margin: 10px;
   text-align: center;
 }
 
